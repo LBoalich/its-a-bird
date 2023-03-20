@@ -1,33 +1,64 @@
 import quizReducer, {
-  increment,
-  decrement,
-  incrementByAmount,
+  saveAnswer,
+  incrementQuestion,
 } from './quizSlice';
 
-describe('counter reducer', () => {
+describe('quiz reducer', () => {
   const initialState = {
-    value: 3,
-    status: 'idle',
+    currentQuestion: 1,
+    questions: {
+      1: {
+        question: "question1",
+        choose: {
+          1: "choice1.1",
+          2: "choice1.2",
+          3: "choice1.3",
+          4: "choice1.4"
+        }
+      },
+    },
+    answers: {
+      1: "",
+      2: ""
+    }
   };
   it('should handle initial state', () => {
     expect(quizReducer(undefined, { type: 'unknown' })).toEqual({
-      value: 0,
-      status: 'idle',
+      currentQuestion: 1,
+      questions: {
+        1: {
+          question: "question1",
+          choose: {
+            1: "choice1.1",
+            2: "choice1.2",
+            3: "choice1.3",
+            4: "choice1.4"
+          }
+        },
+        2: {
+          question: "question2",
+          choose: {
+            1: "choice2.1",
+            2: "choice2.2",
+            3: "choice2.3",
+            4: "choice2.4"
+          }
+        }
+      },
+      answers: {
+        1: "",
+        2: ""
+      }
     });
   });
 
   it('should handle increment', () => {
-    const actual = quizReducer(initialState, increment());
-    expect(actual.value).toEqual(4);
+    const actual = quizReducer(initialState, incrementQuestion());
+    expect(actual.currentQuestion).toEqual(2);
   });
 
-  it('should handle decrement', () => {
-    const actual = quizReducer(initialState, decrement());
-    expect(actual.value).toEqual(2);
-  });
-
-  it('should handle incrementByAmount', () => {
-    const actual = quizReducer(initialState, incrementByAmount(2));
-    expect(actual.value).toEqual(5);
+  it('should handle saveAnswer', () => {
+    const actual = quizReducer(initialState, saveAnswer({questionNumber: 1, answer: 3}));
+    expect(actual.answers[1]).toEqual(3);
   });
 });

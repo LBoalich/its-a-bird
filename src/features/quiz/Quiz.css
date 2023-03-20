@@ -1,0 +1,35 @@
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.quizContainer h1 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.answerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    height: 75%;
+    width: 100%;
+}
+
+.answerChoice {
+    height: 40vw;
+    width: 40vw;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.answerChoice img {
+    height: 100%;
+    width: 100%;
+}
