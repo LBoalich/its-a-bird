@@ -15,12 +15,23 @@ export function Quiz() {
   const quizQuestions = useSelector(selectQuizQuestions);
   const quizAnswers = useSelector(selectQuizAnswers); 
 
+  const currentChoices = quizQuestions[currentQuestionNum].choose;
+  const currentClickValues = quizQuestions[currentQuestionNum].clickValues;
+
+  const choice1 = currentChoices[1];
+  const clickValue1 = currentClickValues[1];
+
+  const handleClick = (answer) => {
+    dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
+    dispatch(incrementQuestion());
+  }
+
   return (
     <section className="quizContainer">
       <h1>{quizQuestions[currentQuestionNum].question}</h1>
       <div className="answerContainer">
         <figure className="answerChoice">
-          <img src={require("./quizPics/citron_crested.jpg")} />
+          <img src={require(`${choice1}`)} onClick={() => handleClick(clickValue1)}/>
         </figure>
         <figure className="answerChoice">
           <img src={require("./quizPics/major_mitchell.jpg")}/>

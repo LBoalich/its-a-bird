@@ -4,21 +4,33 @@ const initialState = {
   currentQuestion: 1,
   questions: {
     1: {
-      question: "question1",
+      question: "Pick A Color",
       choose: {
-        1: "choice1.1",
+        1: "./quizPics/citron_crested.jpg",
         2: "choice1.2",
         3: "choice1.3",
         4: "choice1.4"
+      },
+      clickValues: {
+        1: "citron",
+        2: "click1.2",
+        3: "click1.3",
+        4: "click1.4"
       }
     },
     2: {
       question: "question2",
       choose: {
-        1: "choice2.1",
+        1: "./quizPics/red_tailed_black.jpg",
         2: "choice2.2",
         3: "choice2.3",
         4: "choice2.4"
+      },
+      clickValues: {
+        1: "click2.1",
+        2: "click2.2",
+        3: "click2.3",
+        4: "click2.4"
       }
     }
   },
@@ -55,7 +67,7 @@ export const incrementIfOdd = () => (dispatch, getState) => {
   const currentValue = selectQuizCurrentQuestion(getState());
   if (currentValue % 2 === 1) {
     dispatch(incrementQuestion());
-  }
+  };
 };
 
 export default quizSlice.reducer;
