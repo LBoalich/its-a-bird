@@ -6,38 +6,23 @@ const initialState = {
     1: {
       question: "Pick A Color",
       choose: {
-        1: "./quizPics/citron_crested.jpg",
-        2: "choice1.2",
-        3: "choice1.3",
-        4: "choice1.4"
+        "click1.1": "./quizPics/citron_crested.jpg",
+        "click1.2": "./quizPics/major_mitchell.jpg",
+        "click1.3": "./quizPics/pink_and_grey2.jpg",
+        "click1.4": "./quizPics/red_tailed_black.jpg",
       },
-      clickValues: {
-        1: "citron",
-        2: "click1.2",
-        3: "click1.3",
-        4: "click1.4"
-      }
     },
     2: {
       question: "question2",
       choose: {
-        1: "./quizPics/red_tailed_black.jpg",
-        2: "choice2.2",
-        3: "choice2.3",
-        4: "choice2.4"
+        "click2.1": "./quizPics/red_tailed_black.jpg",
+        "click2.2": "./quizPics/citron_crested.jpg",
+        "click2.3": "./quizPics/pink_and_grey2.jpg",
+        "click2.4": "./quizPics/major_mitchell.jpg",
       },
-      clickValues: {
-        1: "click2.1",
-        2: "click2.2",
-        3: "click2.3",
-        4: "click2.4"
-      }
-    }
+    },
   },
-  answers: {
-    1: "",
-    2: ""
-  }
+  answers: {},
 };
 
 export const quizSlice = createSlice({
