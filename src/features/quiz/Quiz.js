@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   saveAnswer,
@@ -30,7 +30,7 @@ export function Quiz() {
     let finalAnswer = "";
 
     //consolidate answers to single array
-    Object.values(quizAnswers).map(answer => {
+    Object.values(quizAnswers).forEach(answer => {
       answer.forEach(bird => {
         allAnswers.push(bird);
       });
