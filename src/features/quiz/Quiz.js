@@ -18,9 +18,45 @@ export function Quiz() {
   const currentChoices = quizQuestions[currentQuestionNum].choose;
 
   const handleClick = (answer) => {
-    dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
-    dispatch(incrementQuestion());
-  }
+    if (currentQuestionNum < 10) {
+      dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
+      dispatch(incrementQuestion());
+    };
+  };
+
+  const quizResult = () => {
+    const allAnswers = [];
+    const counts = {};
+    let finalAnswer = "";
+
+    //consolidate answers to single array
+    Object.values(quizAnswers).map(answer => {
+      answer.forEach(bird => {
+        allAnswers.push(bird);
+      });
+    });
+    //set intitial counts to 0
+    const uniq = [...new Set(allAnswers)];
+    uniq.forEach(bird => {
+      counts[bird] = 0;
+    });
+    //count how many times each bird as picked
+    allAnswers.forEach(bird => {
+      counts[bird] += 1;
+    });
+
+    const maxCount = Math.max(...Object.values(counts));
+    const topAnswers = Object.keys(counts).filter(bird => counts[bird] === maxCount);
+    //if tie pick random top answer
+    if (topAnswers.length === 1) {
+      finalAnswer = topAnswers[0];
+    } else {
+      const randomIndex = Math.floor(Math.random() * topAnswers.length);
+      finalAnswer = topAnswers[randomIndex];
+    }
+
+    return finalAnswer;
+  };
 
   return (
     <section className="quizContainer">
