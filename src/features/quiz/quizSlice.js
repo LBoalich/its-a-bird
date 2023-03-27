@@ -5,21 +5,53 @@ const initialState = {
   questions: {
     1: {
       question: "Pick A Color",
-      choose: {
-        "click1.1": "./quizPics/citron_crested.jpg",
-        "click1.2": "./quizPics/major_mitchell.jpg",
-        "click1.3": "./quizPics/pink_and_grey2.jpg",
-        "click1.4": "./quizPics/red_tailed_black.jpg",
-      },
+      choose: [
+        {
+          "img": "./quizPics/citron_crested.jpg",
+          "alt": "citron crested",
+          "answer": "citron crested",
+        },
+        {
+          "img": "./quizPics/major_mitchell.jpg",
+          "alt": "major mitchell",
+          "answer": "major mitchell",
+        },
+        {
+          "img": "./quizPics/galah2.jpg",
+          "alt": "galah",
+          "answer": "galah",
+        },
+        {
+          "img": "./quizPics/red_tailed_black.jpg",
+          "alt": "red-tailed black",
+          "answer": "red-tailed black",
+        },
+      ],
     },
     2: {
       question: "question2",
-      choose: {
-        "click2.1": "./quizPics/red_tailed_black.jpg",
-        "click2.2": "./quizPics/citron_crested.jpg",
-        "click2.3": "./quizPics/pink_and_grey2.jpg",
-        "click2.4": "./quizPics/major_mitchell.jpg",
-      },
+      choose: [
+        {
+          "img": "./quizPics/red_tailed_black.jpg",
+          "alt": "red-tailed black",
+          "answer": "red-tailed black",
+        },
+        {
+          "img": "./quizPics/citron_crested.jpg",
+          "alt": "citron crested",
+          "answer": "citron crested",
+        },
+        {
+          "img": "./quizPics/galah2.jpg",
+          "alt": "galah",
+          "answer": "galah",
+        },
+        {
+          "img": "./quizPics/major_mitchell.jpg",
+          "alt": "major mitchell",
+          "answer": "major mitchell",
+        },
+      ],
     },
   },
   answers: {},

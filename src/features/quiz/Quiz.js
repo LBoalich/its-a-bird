@@ -26,9 +26,9 @@ export function Quiz() {
     <section className="quizContainer">
       <h1>{quizQuestions[currentQuestionNum].question}</h1>
       <div className="answerContainer">
-        {Object.entries(currentChoices).map(choice => {
-          return <figure className="answerChoice">
-                  <img src={require(`${choice[1]}`)} onClick={() => handleClick(choice[0])}/>
+        {currentChoices.map(choice => {
+          return <figure className="answerChoice" key={choice.alt}>
+                  <img src={require(`${choice.img}`)} alt={choice.alt} onClick={() => handleClick(choice.answer)}/>
                 </figure>
         })}
       </div>
