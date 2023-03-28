@@ -21,6 +21,8 @@ export function Quiz() {
     if (currentQuestionNum < 10) {
       dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
       dispatch(incrementQuestion());
+    } else if (currentQuestionNum === 10) {
+      dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
     };
   };
 
