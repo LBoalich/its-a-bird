@@ -7,6 +7,7 @@ import {
   selectQuizCurrentQuestion,
   selectQuizQuestions
 } from './quizSlice';
+import { saveFinalAnswer } from '../results/resultsSlice';
 import './Quiz.css';
 
 export function Quiz() {
@@ -23,6 +24,8 @@ export function Quiz() {
       dispatch(incrementQuestion());
     } else if (currentQuestionNum === 10) {
       dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
+      const result = quizResult();
+      dispatch(saveFinalAnswer(result))
     };
   };
 
