@@ -29,5 +29,6 @@ export const descriptionsSlice = createSlice({
 });
 
 export const selectDescriptions = (state) => state.descriptions;
+export const selectTypes = (state) => Object.keys(state.descriptions);
 
 export default descriptionsSlice.reducer;
