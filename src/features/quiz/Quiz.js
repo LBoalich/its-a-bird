@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import {
   saveAnswer,
   incrementQuestion,
@@ -12,11 +13,13 @@ import './Quiz.css';
 
 export function Quiz() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const currentQuestionNum = useSelector(selectQuizCurrentQuestion);
   const quizQuestions = useSelector(selectQuizQuestions);
   const quizAnswers = useSelector(selectQuizAnswers); 
 
   const currentChoices = quizQuestions[currentQuestionNum].choose;
+ 
 
   const handleClick = (answer) => {
     if (currentQuestionNum < 10) {
@@ -25,7 +28,8 @@ export function Quiz() {
     } else if (currentQuestionNum === 10) {
       dispatch(saveAnswer({questionNumber: currentQuestionNum, answer: answer}));
       const result = quizResult();
-      dispatch(saveFinalAnswer(result))
+      dispatch(saveFinalAnswer(result));
+      navigate("/result");
     };
   };
 
