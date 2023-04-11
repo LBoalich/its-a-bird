@@ -9,17 +9,17 @@ const initialState = {
         {
           "img": "./quizPics/1/yellow.jpg",
           "alt": "Yellow",
-          "answer": ["Sulphur Crested", "Cockatiel", "Yellow-tailed Black", "Umbrella"],
+          "answer": ["Sulphur-crested", "Cockatiel", "Yellow-tailed Black", "Umbrella"],
         },
         {
           "img": "./quizPics/1/blue.jpg",
           "alt": "Blue",
-          "answer": ["Blue Eyed"],
+          "answer": ["Blue-eyed"],
         },
         {
           "img": "./quizPics/1/red.jpg",
           "alt": "Red",
-          "answer": ["Palm", "Gang Gang", "Red-tailed Black"],
+          "answer": ["Palm", "Gang-gang", "Red-tailed Black"],
         },
         {
           "img": "./quizPics/1/pink.jpg",
@@ -49,7 +49,7 @@ const initialState = {
         {
           "img": "./quizPics/2/comedian.jpg",
           "alt": "Comedian",
-          "answer": ["Galah", "Gang Gang"],
+          "answer": ["Galah", "Gang-gang"],
         },
       ],
     },
@@ -64,17 +64,17 @@ const initialState = {
         {
           "img": "./quizPics/3/loud.png",
           "alt": "Loud",
-          "answer": ["Yellow-tailed Black", "Sulphur Crested"],
+          "answer": ["Yellow-tailed Black", "Sulphur-crested"],
         },
         {
           "img": "./quizPics/3/quiet.png",
           "alt": "Quiet",
-          "answer": ["Gang Gang", "Galah"],
+          "answer": ["Gang-gang", "Galah"],
         },
         {
           "img": "./quizPics/3/friendly.png",
           "alt": "Friendly",
-          "answer": ["Blue Eyed"],
+          "answer": ["Blue-eyed"],
         },
       ],
     },
@@ -84,12 +84,12 @@ const initialState = {
         {
           "img": "./quizPics/4/blackOpal.png",
           "alt": "Black Opal",
-          "answer": ["Palm", "Galah", "Blue Eyed", "Major Mitchell"],
+          "answer": ["Palm", "Galah", "Blue-eyed", "Major Mitchell"],
         },
         {
           "img": "./quizPics/4/quartz.png",
           "alt": "Quartz",
-          "answer": ["Umbrella", "Sulphur Crested"],
+          "answer": ["Umbrella", "Sulphur-crested"],
         },
         {
           "img": "./quizPics/4/blueDiamond.png",
@@ -99,7 +99,7 @@ const initialState = {
         {
           "img": "./quizPics/4/amethyst.png",
           "alt": "Amethyst",
-          "answer": ["Cockatiel", "Gang Gang"],
+          "answer": ["Cockatiel", "Gang-gang"],
         },
       ],
     },
@@ -114,7 +114,7 @@ const initialState = {
         {
           "img":  "./quizPics/5/dance.jpg",
           "alt": "Dance",
-          "answer": ["Sulphur Crested"],
+          "answer": ["Sulphur-crested"],
         },
         {
           "img":  "./quizPics/5/drum.jpg",
@@ -139,7 +139,7 @@ const initialState = {
         {
           "img": "./quizPics/6/classic.jpg",
           "alt": "Classic",
-          "answer": ["Umbrella", "Sulphur Crested", "Blue Eyed"],
+          "answer": ["Umbrella", "Sulphur-crested", "Blue-eyed"],
         },
         {
           "img": "./quizPics/6/tuxedoSuit.jpg",
@@ -149,7 +149,7 @@ const initialState = {
         {
           "img": "./quizPics/6/colorful.jpg",
           "alt": "Colorful",
-          "answer": ["Major Mitchell", "Cockatiel", "Galah", "Gang Gang"],
+          "answer": ["Major Mitchell", "Cockatiel", "Galah", "Gang-gang"],
         },
       ],
     },
@@ -159,17 +159,17 @@ const initialState = {
         {
           "img": "./quizPics/7/north.png",
           "alt": "North",
-          "answer": ["Red-tailed Black", "Palm", "Blue Eyed", "Umbrella"],
+          "answer": ["Red-tailed Black", "Palm", "Blue-eyed", "Umbrella"],
         },
         {
           "img": "./quizPics/7/east.png",
           "alt": "East",
-          "answer": ["Yellow-tailed Black", "Sulphur Crested"],
+          "answer": ["Yellow-tailed Black", "Sulphur-crested"],
         },
         {
           "img": "./quizPics/7/south.png",
           "alt": "South",
-          "answer": ["Gang Gang"],
+          "answer": ["Gang-gang"],
         },
         {
           "img": "./quizPics/7/west.png",
@@ -184,7 +184,7 @@ const initialState = {
         {
           "img": "./quizPics/8/wine.png",
           "alt": "Wine",
-          "answer": ["Gang Gang"],
+          "answer": ["Gang-gang"],
         },
         {
           "img": "./quizPics/8/cheese.png",
@@ -209,7 +209,7 @@ const initialState = {
         {
           "img": "./quizPics/9/2.png",
           "alt": "2",
-          "answer": ["Gang Gang", "Cockatiel"],
+          "answer": ["Gang-gang", "Cockatiel"],
         },
         {
           "img": "./quizPics/9/4.png",
@@ -219,7 +219,7 @@ const initialState = {
         {
           "img": "./quizPics/9/8.png",
           "alt": "8",
-          "answer": ["Umbrella", "Blue Eyed", "Sulphur Crested"],
+          "answer": ["Umbrella", "Blue-eyed", "Sulphur-crested"],
         },
         {
           "img": "./quizPics/9/5.png",
@@ -234,7 +234,7 @@ const initialState = {
         {
           "img": "./quizPics/10/forest.jpg",
           "alt": "Forest",
-          "answer": ["Gang Gang", "Sulphur Crested", "Blue Eyed", "Yellow-tailed Black", "Major Mitchell"],
+          "answer": ["Gang-gang", "Sulphur-crested", "Blue-eyed", "Yellow-tailed Black", "Major Mitchell"],
         },
         {
           "img": "./quizPics/10/field.jpg",
