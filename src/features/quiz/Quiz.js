@@ -6,7 +6,8 @@ import {
   incrementQuestion,
   selectQuizAnswers,
   selectQuizCurrentQuestion,
-  selectQuizQuestions
+  selectQuizQuestions,
+  resetQuiz,
 } from './quizSlice';
 import { saveFinalAnswer } from '../results/resultsSlice';
 import './Quiz.css';
@@ -30,6 +31,7 @@ export function Quiz() {
       const result = quizResult();
       dispatch(saveFinalAnswer(result));
       navigate("/result");
+      dispatch(resetQuiz());
     };
   };
 
