@@ -19,13 +19,6 @@ li {
     padding: 0 24px;
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
-
 .nav-branding {
     font-size: 2rem;
     color: white;
@@ -43,8 +36,55 @@ li {
 }
 
 .hamburger {
-    display: none;
+    display: block;
     cursor: pointer;
+}
+
+.hamburger-active {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    background-color: #262626;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu-active {
+    left: 0;
+    top: 70px;
+    gap: 0;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    background-color: #262626;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
 }
 
 .bar {
@@ -55,56 +95,4 @@ li {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     background-color: white;
-}
-
-@media only screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger-active {
-        display: block;
-    }
-
-    .hamburger-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        width: 100%;
-        position: fixed;
-        flex-direction: column;
-        background-color: #262626;
-        text-align: center;
-        transition: 0.3s;
-        display: flex;
-    }
-
-    .nav-item {
-        margin: 16px 0;
-    }
-
-    .nav-menu-active {
-        left: 0;
-        top: 70px;
-        gap: 0;
-        width: 100%;
-        position: fixed;
-        flex-direction: column;
-        background-color: #262626;
-        text-align: center;
-        transition: 0.3s;
-        display: flex;
-    }
 }
