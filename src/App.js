@@ -8,7 +8,7 @@ import Root from './features/root/Root';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <Root />} >
-    <Route path="" element={ <Quiz />} />
+    <Route path="quiz" element={ <Quiz />} />
     <Route path="result" element={ <Results />} />
     <Route path="types" />
     <Route path="types:type" element={<Descriptions />} />
