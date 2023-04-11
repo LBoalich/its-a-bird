@@ -6,13 +6,11 @@ export function Results() {
     const dispatch = useDispatch();
     const results = useSelector(selectResults);
     const finalAnswer = useSelector(selectFinalAnswer);
-
-    const testAnswer = "Blue Eyed";
-    const finalResult = results[testAnswer];
+    const finalResult = results[finalAnswer];
 
     return (
         <div>
-            <h1>You are most like the {testAnswer} Cockatoo!</h1>
+            <h1>You are most like the {finalAnswer} Cockatoo!</h1>
             <img src={require(`${finalResult.img}`)} alt={finalResult.alt}/>
         </div>
     );
