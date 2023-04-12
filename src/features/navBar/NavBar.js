@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { selectTypes } from "../descriptions/descriptionsSlice";
 import "./NavBar.css";
 
 const NavBar = () => {
-    const types = useSelector(selectTypes);
     const [active, setActive] = useState(false);
     
     const ToggleClass = () => {
@@ -24,6 +21,11 @@ const NavBar = () => {
                     <li className="nav-item">
                         <NavLink to="/" className={({ isActive }) => `linkStyle ${isActive ? "nav-link nav-link-active" : "nav-link"}`}>
                             Home
+                        </NavLink> 
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/quiz" className={({ isActive }) => `linkStyle ${isActive ? "nav-link nav-link-active" : "nav-link"}`}>
+                            Quiz
                         </NavLink> 
                     </li>
                     <li className="nav-item">

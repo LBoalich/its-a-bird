@@ -1,11 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { selectResults } from "../results/resultsSlice";
+import { selectTypes } from "./typesSlice";
 
 export function Types() {
     const slugify = require("slugify");
-    const types = useSelector(selectResults);
+    const types = useSelector(selectTypes);
     const typesArr = Object.entries(types);
 
     return (
@@ -14,7 +14,7 @@ export function Types() {
             {typesArr.map(type => {
                 return <article className="type-container">
                             <Link to={`/types/${slugify(type[0])}`}>{type[0]}</Link>
-                            <img src={require(`../results${types[type[0]].img}`)}/>
+                            <img src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}/>
                         </article>
             })}
         </section>

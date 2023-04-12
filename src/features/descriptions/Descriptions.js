@@ -1,12 +1,11 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { selectDescriptions } from './descriptionsSlice';
 import "./Descriptions.css";
 
 export function Descriptions() {
   const slugify = require("slugify");
-  const dispatch = useDispatch();
   const descritptions = useSelector(selectDescriptions);
   let { type } = useParams();
 

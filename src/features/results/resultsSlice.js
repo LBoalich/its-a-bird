@@ -3,52 +3,52 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     results: {
         "Blue-eyed": {
-            "img": "/resultsPics/blue_eyed.jpg",
+            "img": "./resultsPics/cuddlingBlue.jpg",
             "alt": "Blue-eyed Cockatoo",
             "description": "Test Blue Eyed",
         },
         "Cockatiel": {
-            "img": "/resultsPics/cockatiel.jpg",
+            "img": "./resultsPics/singingCockatiel.jpg",
             "alt": "Cockatiel",
             "description": "Test Cockatiel",
         },
         "Galah": {
-            "img": "/resultsPics/galah.jpg",
+            "img": "./resultsPics/funnyGalah.jpg",
             "alt": "Galah",
             "description": "Test Galah",
         },
         "Gang-gang": {
-            "img": "/resultsPics/gang_gang.jpg",
+            "img": "./resultsPics/wineGangGang.jpg",
             "alt": "Gang-gang Cockatoo",
             "description": "Test Gang Gang",
         },
         "Major Mitchell": {
-            "img": "/resultsPics/major_mitchell.jpg",
+            "img": "./resultsPics/modelMajorMitchell1.jpg",
             "alt": "Major Mitchell's Cockatoo",
             "description": "Test Major Mitchell",
         },
         "Palm": {
-            "img": "/resultsPics/palm.jpg",
+            "img": "./resultsPics/drummerPalm.jpg",
             "alt": "Palm Cockatoo",
             "description": "Test Palm",
         },
         "Red-Tailed Black": {
-            "img": "/resultsPics/red_tailed.jpg",
+            "img": "./resultsPics/kingRedTailed.jpg",
             "alt": "Red-tailed Black Cockatoo",
             "description": "Test Red-tailed Black",
         },
         "Sulphur-crested": {
-            "img": "/resultsPics/sulphur_crested.jpg",
+            "img": "./resultsPics/puzzleSulphur.jpg",
             "alt": "Sulphur-crested Cockatoo",
             "description": "Test Sulphur Crested",
         },
         "Umbrella": {
-            "img": "/resultsPics/umbrella.jpg",
+            "img": "./resultsPics/holdingUmbrella.jpg",
             "alt": "Umbrella Cockatoo",
             "description": "Test Umbrella",
         },
         "Yellow-tailed Black": {
-            "img": "/resultsPics/yellow_tailed.jpg",
+            "img": "./resultsPics/redCarpetYellow.jpg",
             "alt": "Yellow-tailed Black Cockatoo",
             "description": "Test Yellow-tailed Black",
         },
