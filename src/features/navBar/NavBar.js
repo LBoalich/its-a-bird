@@ -29,6 +29,11 @@ const NavBar = () => {
                         </NavLink> 
                     </li>
                     <li className="nav-item">
+                        <NavLink to="/result" className={({ isActive }) => `linkStyle ${isActive ? "nav-link nav-link-active" : "nav-link"}`}>
+                            Quiz Result
+                        </NavLink> 
+                    </li>
+                    <li className="nav-item">
                         <NavLink to="/types" className={({ isActive }) => `linkStyle ${isActive ? "nav-link nav-link-active" : "nav-link"}`}>
                             Types
                         </NavLink> 
