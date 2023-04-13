@@ -4,33 +4,56 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color:beige;
+    height: 65vh;
+    position: absolute;
+    top:  57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .quizContainer h1 {
-    font-size: 2rem;
-    margin: 2rem;
+    font-size: 4vh;
+    padding: .5vh 1.5vh .5vh 1.5vh;
     text-align: center;
+    height: 25%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 .answerContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
     height: 75%;
     width: 100%;
+    background-color: black;
+    padding: 2vw 0 2vw 0;
 }
 
 .answerChoice {
-    height: 40vw;
-    width: 40vw;
+    width: 38vw;
+    height: 38vw;
     overflow: hidden;
-    margin: 1rem;
-}
+    background-color: aliceblue;
+    padding: 2vw;
+} 
 
 .answerChoice img {
     height: 100%;
     width: 100%;
+}
+
+@media only screen and (min-width: 410px) {
+    .answerChoice {
+        height: 22vh;
+        width: 22vh;
+        padding: 1vh;
+    }
 }
