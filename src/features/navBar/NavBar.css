@@ -85,6 +85,7 @@ li {
     text-align: center;
     transition: 0.3s;
     display: flex;
+    z-index: 5;
 }
 
 .bar {
