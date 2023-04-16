@@ -19,6 +19,7 @@ li {
     padding: 0 24px;
 }
 
+
 .nav-branding {
     font-size: 2rem;
     color: white;
@@ -68,6 +69,7 @@ li {
     text-align: center;
     transition: 0.3s;
     display: flex;
+    z-index: 5;
 }
 
 .nav-item {
