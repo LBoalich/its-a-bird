@@ -19,12 +19,16 @@ export function Descriptions() {
     return typeString;
   };
 
-  const currentSelection = getTypeString();
+  const currentSelectionString = getTypeString();
+  const currentSelection = descritptions[currentSelectionString];
 
   return (
     <article className="description-container">
-        <h1>{currentSelection}</h1>
-        <p style={{whiteSpace: "pre-line"}}>{descritptions[currentSelection]}</p>
+        <h1>{currentSelectionString}</h1>
+        <figure className="description-img-container">
+          <img src={require(`${currentSelection.img}`)} alt={currentSelection.alt} className="description-img" />
+        </figure>
+        <p style={{whiteSpace: "pre-line"}}>{currentSelection.description}</p>
     </article>
   );
 };
