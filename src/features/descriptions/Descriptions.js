@@ -22,7 +22,7 @@ export function Descriptions() {
   const currentSelection = getTypeString();
 
   return (
-    <article>
+    <article className="description-container">
         <h1>{currentSelection}</h1>
         <p style={{whiteSpace: "pre-line"}}>{descritptions[currentSelection]}</p>
     </article>

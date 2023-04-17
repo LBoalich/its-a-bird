@@ -68,18 +68,17 @@
 
     .type-container {
         width: 40vw;
-        height: calc(100vh - 100px);
-       justify-content: space-evenly;
+        height: calc(100vh - 120px);
+        justify-content: space-evenly;
     }
 
     .type-container h2 {
-       margin: 0;
        font-size: 5vh;
+       margin: 0;
     }
 
-    .type-img-container{
+    .type-img-container {
         height: 60%;
-        width: 100%;
     }
 
     .type-img {

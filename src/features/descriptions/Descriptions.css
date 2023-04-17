@@ -1,0 +1,14 @@
+.description-container {
+    background-color: black;
+    color: white;
+    margin: 90px 4vw 20px 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vw;
+}
+
+.description-container h1 {
+    padding-bottom: 4vw;
+}
