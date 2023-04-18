@@ -5,10 +5,12 @@ import { Quiz } from './features/quiz/Quiz';
 import { Results } from './features/results/Results';
 import { Descriptions } from "./features/descriptions/Descriptions";
 import { Types } from './features/types/Types';
+import { Home } from './features/home/Home';
 import Root from './features/root/Root';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <Root /> } >
+    <Route path="" element={ <Home />}/>
     <Route path="quiz" element={ <Quiz /> } />
     <Route path="result" element={ <Results /> } />
     <Route path="types" element={ <Types /> }/>
