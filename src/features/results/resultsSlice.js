@@ -4,53 +4,43 @@ const initialState = {
     results: {
         "Blue-eyed": {
             "img": "./resultsPics/cuddlingBlue.jpg",
-            "alt": "Blue-eyed Cockatoo",
-            "description": "Test Blue Eyed",
+            "alt": "Blue-eyed Cockatoos cuddling",
         },
         "Cockatiel": {
             "img": "./resultsPics/singingCockatiel.jpg",
-            "alt": "Cockatiel",
-            "description": "Test Cockatiel",
+            "alt": "Cockatiel singing",
         },
         "Galah": {
             "img": "./resultsPics/funnyGalah.jpg",
-            "alt": "Galah",
-            "description": "Test Galah",
+            "alt": "Galah Cocketoo tap dancing",
         },
         "Gang-gang": {
             "img": "./resultsPics/wineGangGang.jpg",
-            "alt": "Gang-gang Cockatoo",
-            "description": "Test Gang Gang",
+            "alt": "Gang-gang Cockatoo opening wine bottle",
         },
         "Major Mitchell": {
             "img": "./resultsPics/modelMajorMitchell1.jpg",
-            "alt": "Major Mitchell's Cockatoo",
-            "description": "Test Major Mitchell",
+            "alt": "Major Mitchell's Cockatoo modeling",
         },
         "Palm": {
             "img": "./resultsPics/drummerPalm.jpg",
-            "alt": "Palm Cockatoo",
-            "description": "Test Palm",
+            "alt": "Palm Cockatoo playing drums",
         },
         "Red-Tailed Black": {
             "img": "./resultsPics/kingRedTailed.jpg",
-            "alt": "Red-tailed Black Cockatoo",
-            "description": "Test Red-tailed Black",
+            "alt": "Red-tailed Black Cockatoo wearing kings crown",
         },
         "Sulphur-crested": {
             "img": "./resultsPics/puzzleSulphur.jpg",
-            "alt": "Sulphur-crested Cockatoo",
-            "description": "Test Sulphur Crested",
+            "alt": "Sulphur-crested Cockatoo solving rubix cube",
         },
         "Umbrella": {
             "img": "./resultsPics/holdingUmbrella.jpg",
-            "alt": "Umbrella Cockatoo",
-            "description": "Test Umbrella",
+            "alt": "Umbrella Cockatoo holding umbrella",
         },
         "Yellow-tailed Black": {
             "img": "./resultsPics/redCarpetYellow.jpg",
-            "alt": "Yellow-tailed Black Cockatoo",
-            "description": "Test Yellow-tailed Black",
+            "alt": "Yellow-tailed Black Cockatoo on red carpet",
         },
     },
     finalAnswer: "",
