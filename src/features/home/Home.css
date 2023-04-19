@@ -1,5 +1,21 @@
+.quiz-banner {
+    margin-top: 70px;
+    padding: 3vw;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.quiz-link {
+    color: black;
+    font-weight: bold;
+}
+
 .home-container {
-    margin: 100px 3vw 30px 3vw;
+    margin: 30px 3vw 30px 3vw;
     background-color: black;
     color: white;
     white-space: pre-line;
@@ -40,6 +56,11 @@
 }
 
 @media only screen and (orientation: landscape) {
+    .quiz-banner {
+        padding: 2vh;
+        font-size: 1.75vw;
+    }
+    
     .home-container h1 {
         font-size: 9vh;
     }
