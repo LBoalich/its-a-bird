@@ -39,7 +39,7 @@ const NavBar = () => {
                         </NavLink> 
                     </li>
                 </ul>
-                <NavLink to="/" className="nav-branding">It's A Bird</NavLink>
+                <NavLink to="/" className="nav-branding"><img src={require("./its-a-bird.png")} alt="It's A Bird" className="nav-img"/></NavLink>
             </nav>
         </header>
     )
