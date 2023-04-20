@@ -18,26 +18,30 @@
     margin: 30px 3vw 30px 3vw;
     background-color: black;
     color: white;
-    white-space: pre-line;
     padding: 4vw;
     overflow: hidden;
 }
 
-.home-container h1 {
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
-    font-size: 5vh;
+.home-font-container {
+    margin: 0 2vw 0 2vw;
+}
+
+.home-font-img {
+    width: 35vw;
+    height: auto;
+    border-radius: 30%;
 }
 
 .home-container p {
-    text-align: justify;
     font-size: 3vh;
+    text-align: justify;
 }
 
 .home-img {
+    border-radius: 50%;
     width: 45vw;
     height: auto;
+    shape-outside: circle();
 }
 
 #left-top {
