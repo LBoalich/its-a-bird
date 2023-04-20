@@ -9,6 +9,19 @@
     font-size: 2.5vh;
 }
 
+.quiz-banner p {
+    animation: 2s ease-in-out .25s 1 reverse both running slidein;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translate(100vw);
+    }
+}
+
 .quiz-link {
     color: black;
     font-weight: bold;
