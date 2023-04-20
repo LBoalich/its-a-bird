@@ -31,7 +31,7 @@ li {
     height: 70px;
     display: flex;
     justify-content: flex-end;
-    max-width: 75%;
+    max-width: 30%;
 }
 
 .nav-img {
@@ -113,4 +113,10 @@ li {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     background-color: white;
+}
+
+@media only screen and (orientation: landscape) {
+    .nav-branding {
+        max-width: 20%;
+    }
 }
