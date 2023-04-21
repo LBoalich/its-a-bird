@@ -4,7 +4,7 @@ const initialState = {
   currentQuestion: 1,
   questions: {
     1: {
-      question: "Pick A Color",
+      question: "Pick a color:",
       choose: [
         {
           "img": "./quizPics/1/yellow.jpg",
@@ -29,7 +29,7 @@ const initialState = {
       ],
     },
     2: {
-      question: "Would You Rather Be A",
+      question: "Choose an occupation:",
       choose: [
         {
           "img": "./quizPics/2/jockey.png",
@@ -54,7 +54,7 @@ const initialState = {
       ],
     },
     3: {
-      question: "What Is Your Personality Most Like?",
+      question: "What is your personality?",
       choose: [
         {
           "img": "./quizPics/3/shy.jpg",
@@ -79,7 +79,7 @@ const initialState = {
       ],
     },
     4: {
-      question: "Which Gemstone Do You Like Best?",
+      question: "Which gemstone do you like best?",
       choose: [
         {
           "img": "./quizPics/4/blackOpal.png",
@@ -104,7 +104,7 @@ const initialState = {
       ],
     },
     5: {
-      question: "Would You Rather",
+      question: "What do you want to do for fun?",
       choose: [
         {
           "img": "./quizPics/5/sing.jpg",
@@ -129,7 +129,7 @@ const initialState = {
       ],
     },
     6: {
-      question: "What Is Your Style",
+      question: "What is your style?",
       choose: [
         {
           "img": "./quizPics/6/goth.jpg",
@@ -154,7 +154,7 @@ const initialState = {
       ],
     },
     7: {
-      question: "You Are Lost.  Which Direction Do You Take?",
+      question: "You are lost.  Which direction do you take?",
       choose: [
         {
           "img": "./quizPics/7/north.png",
@@ -179,7 +179,7 @@ const initialState = {
       ],
     },
     8: {
-      question: "Which Food Or Drink Do You Want?",
+      question: "Which food or drink do you want?",
       choose: [
         {
           "img": "./quizPics/8/wine.png",
@@ -204,7 +204,7 @@ const initialState = {
       ],
     },
     9: {
-      question: "Pick A Number",
+      question: "Pick a number:",
       choose: [
         {
           "img": "./quizPics/9/2.png",
@@ -229,7 +229,7 @@ const initialState = {
       ],
     },
     10: {
-      question: "What Is The Pretiest Landscape",
+      question: "What is the prettiest landscape?",
       choose: [
         {
           "img": "./quizPics/10/forest.jpg",
