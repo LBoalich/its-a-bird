@@ -27,9 +27,12 @@ export function Descriptions() {
 
   return (
     <article className="description-container">
-        <h1>{currentSelection} Cockatoo</h1>
+        <div className="description-font-container">
+          <img src={require(`${currentSelectionObj.font}`)} alt={currentSelectionObj.fontAlt} className="description-font-img"/>
+          <img src={require("./descriptionsPics/cockatoo.png")} className="description-cockatoo-font" alt="feathered font reading 'Cockatoo'"/>
+        </div>
         <figure className="description-img-container">
-          <img src={require(`${currentSelectionObj.img}`)} alt={currentSelectionObj.alt} className="description-img"/>
+          <img src={require(`${currentSelectionObj.img}`)} alt={currentSelectionObj.alt} className="description-img" id="description-left"/>
         </figure>
         <p>{currentSelectionObj.description}<span className="description-img-container" id="description-right"><img src={require(`../results${resultSelection.img.replace(".", "")}`)} alt={resultSelection.alt} className="description-img"/></span>{currentSelectionObj.description2}</p>  
     </article>
