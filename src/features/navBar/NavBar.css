@@ -39,6 +39,7 @@ li {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    border-bottom-left-radius: 40% 55%;
 }
 
 .nav-link {
@@ -118,5 +119,9 @@ li {
 @media only screen and (orientation: landscape) {
     .nav-branding {
         max-width: 20%;
+    }
+
+    .nav-img {
+        border-bottom-left-radius: 40% 50%;
     }
 }
