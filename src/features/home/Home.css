@@ -1,7 +1,7 @@
 .quiz-banner {
     margin-top: 70px;
     padding: 3vw;
-    background-color: lightblue;
+    background-color: #08678C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@
 .quiz-banner p {
     animation: 2s ease-in-out 1s 1 reverse both running slidein;
     font-family: 'Source Sans 3', sans-serif;
+    color: #BFBFBF;
 }
 
 @keyframes slidein {
@@ -28,10 +29,14 @@
     font-weight: bold;
 }
 
+.quiz-link:hover {
+    color: #F26BAA;
+}
+
 .home-container {
     margin: 30px 3vw 30px 3vw;
-    background-color: black;
-    color: white;
+    background-color: #011126;
+    color: #BFBFBF;
     padding: 4vw;
     overflow: hidden;
 }

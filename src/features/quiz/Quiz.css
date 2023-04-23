@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: lightblue;
+    background-color: #08678C;
     height: 65vh;
     position: absolute;
     top:  57%;
@@ -23,6 +23,7 @@
     width: 100%;
     align-items: center;
     font-family: 'Source Sans 3', sans-serif;
+    color: black;
 }
 
 .answerContainer {
@@ -34,7 +35,7 @@
     align-content: space-around;
     height: 75%;
     width: 100%;
-    background-color: black;
+    background-color: #011126;
     padding: 2vw 0 2vw 0;
 }
 
@@ -42,7 +43,7 @@
     width: 38vw;
     height: 38vw;
     overflow: hidden;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     padding: 2vw;
 } 
 

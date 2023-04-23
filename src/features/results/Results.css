@@ -1,5 +1,5 @@
 .result-container {
-    background-color: black !important;
+    background-color: #011126 !important;
     width: 100%;
     position: absolute;
     top:  54%;
@@ -14,7 +14,7 @@
 }
 
 .result-container h1 {
-    color: white;
+    color: #BFBFBF;
     min-height: 15%;
     margin: 0;
     text-align: center;
@@ -54,6 +54,11 @@
     padding: 1vh;
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 600;
+    background-color: #A6A6A6;
+}
+
+.type-button:hover{
+    background-color: #F26BAA;
 }
 
 @media only screen and (orientation: landscape) {

@@ -21,9 +21,9 @@ export function Types() {
                             <figure className="type-img-container" key={types[type[0]].alt}>
                                 <img className="type-img" src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}/>
                             </figure>
-                            <div className="learn-link-container">
+                            <button className="learn-link-container">
                                 <Link to={`/types/${slugify(type[0])}`} className="learn-link">Learn More</Link>
-                            </div>
+                            </button>
                         </article>
             })}
         </section>

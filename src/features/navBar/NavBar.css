@@ -26,7 +26,7 @@ li {
 
 .nav-branding {
     font-size: 2rem;
-    color: white;
+    color: #A6A6A6;
     text-decoration: none;
     height: 70px;
     display: flex;
@@ -43,13 +43,13 @@ li {
 }
 
 .nav-link {
-    color: white;
+    color: #BFBFBF;
     text-decoration: none;
     transition: .07s ease;
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: #F26BAA;
 }
 
 .hamburger {
@@ -81,7 +81,7 @@ li {
     width: 100%;
     position: fixed;
     flex-direction: column;
-    background-color: #262626;
+    background-color: #011126;
     text-align: center;
     transition: 0.3s;
     display: flex;
@@ -116,7 +116,7 @@ li {
     margin: 5px auto;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    background-color: white;
+    background-color: #A6A6A6;
 }
 
 @media only screen and (orientation: landscape) {
