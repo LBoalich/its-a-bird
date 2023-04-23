@@ -10,7 +10,8 @@
 }
 
 .quiz-banner p {
-    animation: 2s ease-in-out .25s 1 reverse both running slidein;
+    animation: 2s ease-in-out 1s 1 reverse both running slidein;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 @keyframes slidein {
@@ -48,6 +49,8 @@
 .home-container p {
     font-size: 3vh;
     text-align: justify;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
 }
 
 .home-img {

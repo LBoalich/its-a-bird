@@ -23,6 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
 }
 
 .result-img-container {
@@ -50,6 +52,8 @@
     height: 100%;
     font-size: 3em;
     padding: 1vh;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
 }
 
 @media only screen and (orientation: landscape) {

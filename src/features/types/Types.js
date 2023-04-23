@@ -11,7 +11,10 @@ export function Types() {
 
     return (
         <section className="types-container">
-            <h1>Cockatoo Types</h1>
+            <div className="types-font-container">
+            <img src={require("./typesPics/cockatoo-types.png")} alt="feathered font reading 'Cockatoo Types'" className="types-font-img"/>
+            </div>
+
             {typesArr.map(type => {
                 return <article className="type-container" key={type[0]}>
                             <h2>{type[0]}</h2>

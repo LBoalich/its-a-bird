@@ -6,10 +6,20 @@
     margin-top: 70px;
 }
 
-.types-container h1 {
-    color: white;
+.types-font-container {
+    width: 100vw;
+    margin: 4vh 0 4vh 0;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.types-font-img {
+    width: 90vw;
+    height: auto; 
+    border-bottom-left-radius: 20% 50%;  
     margin: 3vh 0 3vh 0;
-    font-size: 5vh;
 }
 
 .type-container {
@@ -25,6 +35,8 @@
 .type-container h2 {
     margin: 4vh 0 4vh 0;
     font-size: 4vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
 }
 
 .type-img-container {
@@ -47,7 +59,9 @@
     color: black;
     text-decoration: none;
     font-size: 2.5vh;
-    padding: .75vh;
+    padding: .75vh 1.5vh .75vh 1.5vh;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 500;
 }
 
 @media only screen and (orientation: landscape) {
@@ -57,13 +71,12 @@
         justify-content: space-around;
     }
 
-    .types-container h1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 6vh;
-        font-size: 8vh;
+    .types-font-container {
+        margin: 7vh 0 7vh 0;
+    }
+
+    .types-font-img {
+        width: 60%;
     }
 
     .type-container {
@@ -93,6 +106,6 @@
 
     .learn-link {
         font-size: 3vh;
-        padding: 1vh;
+        padding: 1vh 2vh;
     }
 }
