@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import NavBar from "../navBar/NavBar";
 
 const Root = () => {
@@ -7,6 +7,7 @@ const Root = () => {
         <>
             <NavBar />
             <Outlet />
+            <ScrollRestoration />
         </>
     )
 };
