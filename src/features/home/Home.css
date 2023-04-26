@@ -55,7 +55,7 @@
     font-size: 3vh;
     text-align: justify;
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .home-img {
@@ -83,7 +83,7 @@
 @media only screen and (orientation: landscape) {
     .quiz-banner {
         padding: 2vh;
-        font-size: 1.75vw;
+        font-size: 2vw;
     }
     
     .home-container h1 {
