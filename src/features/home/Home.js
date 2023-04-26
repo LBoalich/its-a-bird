@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css"
 
 export const Home = () => {
     return (
         <div>
             <div className="quiz-banner">
-                <p>Which cockatoo are you?  Take the <span><NavLink to="/quiz" className="quiz-link">QUIZ</NavLink></span> to find out!</p>
+                <p>Which cockatoo are you?  Take the <span><Link to="/quiz" className="quiz-link">QUIZ</Link></span> to find out!</p>
             </div>
             <article className="home-container">
                 <img src={require("./homePics/punk-rock.jpg")} alt="Punk Rock Cockatoo" className="home-img" id="left-top"/>
