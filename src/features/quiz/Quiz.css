@@ -48,10 +48,6 @@
     padding: 0;  
 } 
 
-.answerChoice:hover {
-    border-color: #D7F207;
-}
-
 .answerChoice:active {
     border-color: #F26BAA;
 }
@@ -59,6 +55,16 @@
 .answerChoice img {
     height: 100%;
     width: 100%;
+}
+
+@media (hover: hover) {
+    .answerChoice:hover {
+        border-color: #D7F207;
+    }
+
+    .answerChoice:active {
+        border-color: #F26BAA;
+    }
 }
 
 @media only screen and (min-width: 410px) {
