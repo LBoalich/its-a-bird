@@ -62,7 +62,7 @@
     white-space: pre-line;
     font-size: 3vh;
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @media only screen and (orientation: landscape) {
@@ -99,6 +99,6 @@
     }
 
     .description-container p {
-        font-size: 5vh;
+        font-size: 6vh;
     }
 }
