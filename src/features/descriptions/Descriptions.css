@@ -18,7 +18,7 @@
 }
 
 .description-font-img {
-    height: 7vh;
+    height: 9vh;
     width: auto;
     max-width: 100%;
     max-height: auto;
@@ -27,7 +27,7 @@
 }
 
 .description-cockatoo-font {
-    height: 3vh;
+    height: 4vh;
     max-width: 40%;
     padding: 0;
     border-bottom-left-radius: 20% 50%;
