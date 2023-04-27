@@ -35,7 +35,7 @@
 
 .home-container {
     margin: 30px 3vw 30px 3vw;
-    background-color: #011126;
+    background-color: rgba(1,17,38, .9);
     color: #BFBFBF;
     padding: 4vw;
     overflow: hidden;

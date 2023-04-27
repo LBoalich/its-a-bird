@@ -1,6 +1,6 @@
 .no-result-container {
     margin-top: calc(70px + 10vh);
-    background-color: #011126;
+    background-color: rgba(1,17,38, .9);
     color: #BFBFBF;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     font-weight: 300;
     margin: 0;
     padding: 0 3vw 5vh 3vw;
-    color: #D7F207;
+    color: #BFBFBF;
     font-size: 4vh;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .result-container {
-    background-color: #011126 !important;
+    background-color: rgba(1,17,38, .9) !important;
     width: 100%;
     position: absolute;
     top: calc(50% + 35px);
