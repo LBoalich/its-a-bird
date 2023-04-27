@@ -1,5 +1,9 @@
 .no-result-container {
-    margin-top: calc(70px + 10vh);
+    position: absolute;
+    top: calc(50% + 35px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     background-color: rgba(1,17,38, .9);
     color: #BFBFBF;
     display: flex;
@@ -8,14 +12,14 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    padding: 5vh 0 ;
+    padding: 3vh 0 ;
 }
 
 .no-result-container h1 {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 0 3vw 5vh 3vw;
+    padding: 0 3vw 3vh 3vw;
     color: #BFBFBF;
     font-size: 4vh;
 }
@@ -33,7 +37,7 @@
 .no-result-container h2 {
     font-family: 'Alegreya Sans SC', sans-serif;
     margin: 0;
-    padding: 5vh 3vw 0 3vw;
+    padding: 3vh 3vw 0 3vw;
     color: #F26BAA;
     font-weight: 300;
     font-size: 4vh;
@@ -112,21 +116,18 @@
 
 @media only screen and (orientation: landscape) {
     .no-result-container {
-        height: calc(100vh - 120px);
-        width: 45vw;
-        position: absolute;
-        top: calc(50% + 35px);
-        left: 50%;
-        transform: translate(-50%, -50%);
+        height: auto;
+        width: auto;
         margin: 0;
     }
     
     .no-result-container h1{
         font-size: 5vh;
+        padding: 2vh 2vw 4vh 2vw;
     }
 
     .no-result-img-container {
-        height: 35vh;
+        height: 30vh;
     }
 
     .no-result-img {
@@ -136,6 +137,7 @@
 
     .no-result-container h2 {
         font-size: 5vh;
+        padding: 4vh 2vw 2vh 2vw;
     }
 
     .result-container {
