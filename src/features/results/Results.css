@@ -6,7 +6,7 @@
     flex-direction: column;
     flex-wrap: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     padding: 5vh 0 ;
 }
@@ -112,7 +112,7 @@
 
 @media only screen and (orientation: landscape) {
     .no-result-container {
-        height: auto;
+        height: calc(100vh - 120px);
         width: 45vw;
         position: absolute;
         top: calc(50% + 35px);
@@ -126,7 +126,7 @@
     }
 
     .no-result-img-container {
-        height: 30vh;
+        height: 35vh;
     }
 
     .no-result-img {
