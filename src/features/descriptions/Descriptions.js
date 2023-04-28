@@ -29,7 +29,7 @@ export function Descriptions() {
     <article className="description-container">
         <div className="description-font-container">
           <img src={require(`${currentSelectionObj.font}`)} alt={currentSelectionObj.fontAlt} className="description-font-img"/>
-          <img src={require("./descriptionsPics/cockatoo.png")} className="description-cockatoo-font" alt="feathered font reading 'Cockatoo'"/>
+          <img src={require("./descriptionsPics/cockatoo.webp")} className="description-cockatoo-font" alt="feathered font reading 'Cockatoo'"/>
         </div>
         <figure className="description-img-container">
           <img src={require(`${currentSelectionObj.img}`)} alt={currentSelectionObj.alt} className="description-img" id="description-left"/>
