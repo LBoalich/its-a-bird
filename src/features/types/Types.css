@@ -33,7 +33,7 @@
 }
 
 .type-container h2 {
-    margin: 4vh 0 4vh 0;
+    margin: 3vh 0 3vh 0;
     font-size: 4vh;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 300;
@@ -51,7 +51,7 @@
 }
 
 .learn-link-container {
-    margin: 4vh 0 4vh 0;
+    margin: 3vh 0 3vh 0;
     background-color: #A6A6A6;
     padding: .75vh 1.5vh .75vh 1.5vh;
 }
@@ -85,27 +85,29 @@
 
     .type-container {
         width: 40vw;
-        height: calc(100vh - 120px);
+        height: fit-content;
         justify-content: space-evenly;
     }
 
     .type-container h2 {
-       font-size: 5vh;
-       margin: 0;
+        font-size: 5vh;
+        height: 20%;
     }
 
-    .type-img-container {
-        height: 60%;
-    }
-
-    .type-img {
-        max-height: 100%;
-        width: auto;
+    .type-img-container{
+        height: 40vh;
         max-width: 100%;
     }
 
+    .type-img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     .learn-link-container {
-        margin: 0;
+        height: 20%;
     }
 
     .learn-link {
