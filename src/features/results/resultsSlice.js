@@ -3,43 +3,43 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
     results: {
         "Blue-eyed": {
-            "img": "./resultsPics/cuddlingBlue.jpg",
+            "img": "./resultsPics/cuddlingBlue.webp",
             "alt": "Blue-eyed Cockatoos cuddling",
         },
         "Cockatiel": {
-            "img": "./resultsPics/singingCockatiel.jpg",
+            "img": "./resultsPics/singingCockatiel.webp",
             "alt": "Cockatiel singing",
         },
         "Galah": {
-            "img": "./resultsPics/funnyGalah.jpg",
+            "img": "./resultsPics/funnyGalah.webp",
             "alt": "Galah Cocketoo tap dancing",
         },
         "Gang-gang": {
-            "img": "./resultsPics/wineGangGang.jpg",
+            "img": "./resultsPics/wineGangGang.webp",
             "alt": "Gang-gang Cockatoo opening wine bottle",
         },
         "Major Mitchell": {
-            "img": "./resultsPics/modelMajorMitchell1.jpg",
+            "img": "./resultsPics/modelMajorMitchell1.webp",
             "alt": "Major Mitchell's Cockatoo modeling",
         },
         "Palm": {
-            "img": "./resultsPics/drummerPalm.jpg",
+            "img": "./resultsPics/drummerPalm.webp",
             "alt": "Palm Cockatoo playing drums",
         },
         "Red-Tailed Black": {
-            "img": "./resultsPics/kingRedTailed.jpg",
+            "img": "./resultsPics/kingRedTailed.webp",
             "alt": "Red-tailed Black Cockatoo wearing kings crown",
         },
         "Sulphur-crested": {
-            "img": "./resultsPics/puzzleSulphur.jpg",
+            "img": "./resultsPics/puzzleSulphur.webp",
             "alt": "Sulphur-crested Cockatoo solving rubix cube",
         },
         "Umbrella": {
-            "img": "./resultsPics/holdingUmbrella.jpg",
+            "img": "./resultsPics/holdingUmbrella.webp",
             "alt": "Umbrella Cockatoo holding umbrella",
         },
         "Yellow-tailed Black": {
-            "img": "./resultsPics/redCarpetYellow.jpg",
+            "img": "./resultsPics/redCarpetYellow.webp",
             "alt": "Yellow-tailed Black Cockatoo on red carpet",
         },
     },

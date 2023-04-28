@@ -12,7 +12,7 @@ export function Types() {
     return (
         <section className="types-container">
             <div className="types-font-container">
-            <img src={require("./typesPics/cockatoo-types.png")} alt="feathered font reading 'Cockatoo Types'" className="types-font-img"/>
+            <img src={require("./typesPics/cockatoo-types.webp")} alt="feathered font reading 'Cockatoo Types'" className="types-font-img"/>
             </div>
 
             {typesArr.map(type => {

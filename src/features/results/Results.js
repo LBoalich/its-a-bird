@@ -16,7 +16,7 @@ export function Results() {
             <section className="no-result-container">
                 <h1>Want to know which cockatoo you are most like?</h1>
                 <figure className="no-result-img-container">
-                    <img src={require("./resultsPics/cute.jpg")} alt="Two cute multi-colored cartoon cockatoos" className="no-result-img" />
+                    <img src={require("./resultsPics/cute.webp")} alt="Two cute multi-colored cartoon cockatoos" className="no-result-img" />
                 </figure>
                 <h2>Take the <Link to="/quiz" className="no-result-link">QUIZ</Link> now to see your result!</h2>
             </section>
