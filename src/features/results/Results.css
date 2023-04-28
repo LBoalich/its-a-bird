@@ -58,7 +58,6 @@
     top: calc(50% + 35px);
     left: 50%;
     transform: translate(-50%,-50%);
-    max-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -81,15 +80,15 @@
 }
 
 .result-img-container {
-    max-height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .result-img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
 }
 
 .button-div {
@@ -151,8 +150,9 @@
         white-space: nowrap;
     }
 
-    .result-img-container {
-        height: 40vh;
+    .result-img {
+        height: 45vh;
+        width: auto;
     }
 
     .type-button {
