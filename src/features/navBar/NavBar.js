@@ -39,7 +39,20 @@ const NavBar = () => {
                         </NavLink> 
                     </li>
                 </ul>
-                <NavLink to="/" className="nav-branding"><img src={require("./its-a-bird-small.webp")} alt="It's A Bird" className="nav-img"/></NavLink>
+                <picture className="nav-branding">
+                    <source 
+                        srcSet={require("./its-a-bird-d.webp")} media="(min-width: 1025px)"
+                        className="nav-img"
+                    />
+                    <source 
+                        srcSet={require("./its-a-bird-m.webp")}
+                        media="(min-width: 1px)"
+                        className="nav-img"
+                    />
+                    <img 
+                        src={require("./its-a-bird-d.webp")} alt="It's A Bird" className="nav-img"
+                    />
+                </picture>
             </nav>
         </header>
     )
