@@ -12,7 +12,7 @@
 .quiz-banner p {
     animation: 2s ease-in-out 1s 1 reverse both running slidein;
     font-family: 'Source Sans 3', sans-serif;
-    color: #BFBFBF;
+    color: black;
 }
 
 @keyframes slidein {
@@ -25,7 +25,7 @@
 }
 
 .quiz-link {
-    color: black;
+    color: whitesmoke;
     font-weight: bold;
 }
 
