@@ -22,7 +22,7 @@ export function Types() {
                                 <img className="type-img" src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}/>
                             </figure>
                             <button className="learn-link-container">
-                                <Link to={`/types/${slugify(type[0])}`} className="learn-link">Learn More</Link>
+                                <Link to={`/types/${slugify(type[0])}`} className="learn-link">Description</Link>
                             </button>
                         </article>
             })}
