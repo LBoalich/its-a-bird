@@ -19,7 +19,9 @@ export function Types() {
                 return <article className="type-container" key={type[0]}>
                             <h2>{type[0]}</h2>
                             <figure className="type-img-container" key={types[type[0]].alt}>
-                                <img className="type-img" src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}/>
+                                <img className="type-img" 
+                                src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}
+                                fetchpriority={type[0] === "Blue-eyed" ? "high" : "low"}/>
                             </figure>
                             <button className="learn-link-container">
                                 <Link to={`/types/${slugify(type[0])}`} className="learn-link">Description</Link>
