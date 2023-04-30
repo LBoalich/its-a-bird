@@ -86,29 +86,34 @@ export const Home = () => {
                         media="(min-width: 1601px)"
                         className="home-img"
                         alt="Breakdancing Cockatoo"  
+                        fetchpriority="high"
                     />
                     <source 
                         srcSet={require("./homePics/dancing-60.webp")} 
                         media="(min-width: 1025px)"
                         className="home-img" 
                         alt="Breakdancing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <source 
                         srcSet={require("./homePics/dancing-40.webp")} 
                         media="(min-width: 747px)"
                         className="home-img" 
                         alt="Breakdancing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <source 
                         srcSet={require("./homePics/dancing-30.webp")} 
                         media="(min-width: 0px)"
                         className="home-img" 
                         alt="Breakdancing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <img 
                         src={require("./homePics/dancing-40.webp")} 
                         alt="Breakdancing Cockatoo" 
-                        className="home-img" 
+                        className="home-img"
+                        fetchpriority="high" 
                     />
                 </picture>
                 <p> But that's not all - these quirky creatures have a knack for saying the funniest things! From mimicking human speech to coming up with their own unique phrases, they'll have you in stitches with their witty repertoire. Just make sure to turn up the music and watch them bust a move with their hilarious dance moves - you won't be able to resist joining in on the fun!
