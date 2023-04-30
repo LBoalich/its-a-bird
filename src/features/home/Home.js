@@ -31,7 +31,7 @@ export const Home = () => {
                         alt="Punk Rock Cockatoo"
                     />
                     <source 
-                        srcSet={require("./homePics/punk-rock-20.webp")} 
+                        srcSet={require("./homePics/punk-rock-30.webp")} 
                         media="(min-width: 0px)"
                         className="home-img"
                         alt="Punk Rock Cockatoo" 
@@ -95,7 +95,7 @@ export const Home = () => {
                         alt="Breakdancing Cockatoo" 
                     />
                     <source 
-                        srcSet={require("./homePics/dancing-20.webp")} 
+                        srcSet={require("./homePics/dancing-30.webp")} 
                         media="(min-width: 0px)"
                         className="home-img" 
                         alt="Breakdancing Cockatoo" 
@@ -131,7 +131,7 @@ export const Home = () => {
                         alt="Singing Cockatoo"
                     />
                     <source 
-                        srcSet={require("./homePics/singing-20.webp")} 
+                        srcSet={require("./homePics/singing-30.webp")} 
                         media="(min-width: 0px)"
                         className="home-img"
                         alt="Singing Cockatoo" 
