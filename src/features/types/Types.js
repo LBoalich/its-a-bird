@@ -31,11 +31,6 @@ export function Types() {
                 />
                 <source 
                     srcSet={require("./typesPics/cockatoo-types-20.webp")} 
-                    media="(min-width: 481px)"
-                    alt="feathered font reading 'Cockatoo Types'" 
-                />
-                <source 
-                    srcSet={require("./typesPics/cockatoo-types-10.webp")} 
                     media="(min-width: 0px)"
                     alt="feathered font reading 'Cockatoo Types'" 
                 />
@@ -51,7 +46,7 @@ export function Types() {
                             <figure className="type-img-container" key={types[type[0]].alt}>
                                 <img className="type-img" 
                                 src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}
-                                fetchpriority={type[0] === "Blue-eyed" ? "high" : "low"}/>
+                            />
                             </figure>
                             <button className="learn-link-container">
                                 <Link to={`/types/${slugify(type[0])}`} className="learn-link">Description</Link>
