@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 
 const NavBar = () => {
+    const navigate = useNavigate();
     const [active, setActive] = useState(false);
     
     const ToggleClass = () => {
         setActive(!active);
+    };
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        navigate("/");
     };
 
     return (
@@ -39,18 +45,37 @@ const NavBar = () => {
                         </NavLink> 
                     </li>
                 </ul>
-                <picture className="nav-branding">
+                <picture className="nav-branding"
+                onClick={handleClick}
+                >
                     <source 
-                        srcSet={require("./its-a-bird-d.webp")} media="(min-width: 1025px)"
+                        srcSet={require("./navBarPics/its-a-bird-80.webp")} media="(min-width: 1601px)"
                         className="nav-img"
+                        alt="feathered font reading 'It's A Bird'" 
                     />
                     <source 
-                        srcSet={require("./its-a-bird-m.webp")}
-                        media="(min-width: 1px)"
+                        srcSet={require("./navBarPics/its-a-bird-60.webp")} media="(min-width: 1025px)"
                         className="nav-img"
+                        alt="feathered font reading 'It's A Bird'" 
+                    />
+                    <source 
+                        srcSet={require("./navBarPics/its-a-bird-40.webp")} media="(min-width: 747px)"
+                        className="nav-img"
+                        alt="feathered font reading 'It's A Bird'" 
+                    />
+                    <source 
+                        srcSet={require("./navBarPics/its-a-bird-20.webp")} media="(min-width: 481px)"
+                        className="nav-img"
+                        alt="feathered font reading 'It's A Bird'" 
+                    />
+                    <source 
+                        srcSet={require("./navBarPics/its-a-bird-10.webp")}
+                        media="(min-width: 0px)"
+                        className="nav-img"
+                        alt="feathered font reading 'It's A Bird'" 
                     />
                     <img 
-                        src={require("./its-a-bird-d.webp")} alt="It's A Bird" className="nav-img"
+                        src={require("./navBarPics/its-a-bird-40.webp")} alt="feathered font reading 'It's A Bird'" className="nav-img"
                     />
                 </picture>
             </nav>

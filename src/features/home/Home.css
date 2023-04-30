@@ -12,7 +12,7 @@
 .quiz-banner p {
     animation: 2s ease-in-out 1s 1 reverse both running slidein;
     font-family: 'Source Sans 3', sans-serif;
-    color: black;
+    color: whitesmoke;
 }
 
 @keyframes slidein {
@@ -25,7 +25,7 @@
 }
 
 .quiz-link {
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
 }
 
@@ -62,22 +62,25 @@
     border-radius: 50%;
     width: 45vw;
     height: auto;
-    shape-outside: circle();
+   
 }
 
 #left-top {
     float: left;
     margin: 0 4vw 4vw 0;
+    shape-outside: circle();
 }
 
 #right {
     float: right;
     margin: 4vw 0 4vw 4vw;
+    shape-outside: circle();
 }
 
 #left-bottom {
     float: left;
     margin: 4vw 4vw 4vw 0;
+    shape-outside: circle();
 }
 
 @media only screen and (orientation: landscape) {
