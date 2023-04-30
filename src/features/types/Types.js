@@ -11,9 +11,39 @@ export function Types() {
 
     return (
         <section className="types-container">
-            <div className="types-font-container">
-            <img src={require("./typesPics/cockatoo-types.webp")} alt="feathered font reading 'Cockatoo Types'" className="types-font-img"/>
-            </div>
+            <picture 
+                className="types-font-container"
+            >
+                <source 
+                    srcSet={require("./typesPics/cockatoo-types-80.webp")} 
+                    media="(min-width: 1601px)"
+                    alt="feathered font reading 'Cockatoo Types'"
+                />
+                <source 
+                    srcSet={require("./typesPics/cockatoo-types-60.webp")} 
+                    media="(min-width: 1025px)"
+                    alt="feathered font reading 'Cockatoo Types'"
+                />
+                <source 
+                    srcSet={require("./typesPics/cockatoo-types-40.webp")} 
+                    media="(min-width: 747px)"
+                    alt="feathered font reading 'Cockatoo Types'" 
+                />
+                <source 
+                    srcSet={require("./typesPics/cockatoo-types-20.webp")} 
+                    media="(min-width: 481px)"
+                    alt="feathered font reading 'Cockatoo Types'" 
+                />
+                <source 
+                    srcSet={require("./typesPics/cockatoo-types-10.webp")} 
+                    media="(min-width: 0px)"
+                    alt="feathered font reading 'Cockatoo Types'" 
+                />
+                <img 
+                    src={require("./typesPics/cockatoo-types-40.webp")} 
+                    alt="feathered font reading 'Cockatoo Types'" className="types-font-img"
+                />
+            </picture>
 
             {typesArr.map(type => {
                 return <article className="type-container" key={type[0]}>
