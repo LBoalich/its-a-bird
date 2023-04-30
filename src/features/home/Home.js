@@ -62,6 +62,11 @@ export const Home = () => {
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-20.webp")} 
+                        media="(min-width: 481px)"
+                        alt="featherd font reading 'Cockatoos'" className="home-font-img" 
+                    />
+                    <source 
+                        srcSet={require("./homePics/cockatoos-10.webp")} 
                         media="(min-width: 0px)"
                         alt="featherd font reading 'Cockatoos'" className="home-font-img" 
                     />
