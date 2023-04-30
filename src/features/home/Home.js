@@ -32,15 +32,9 @@ export const Home = () => {
                     />
                     <source 
                         srcSet={require("./homePics/punk-rock-20.webp")} 
-                        media="(min-width: 481px)"
+                        media="(min-width: 0px)"
                         className="home-img"
                         alt="Punk Rock Cockatoo" 
-                    />
-                    <source 
-                        srcSet={require("./homePics/punk-rock-10.webp")} 
-                        media="(min-width: 0px)"
-                        className="home-img" 
-                        alt="Punk Rock Cockatoo"
                     />
                     <img 
                         src={require("./homePics/punk-rock-40.webp")} 
@@ -68,13 +62,8 @@ export const Home = () => {
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-20.webp")} 
-                        media="(min-width: 481px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img" 
-                    />
-                    <source 
-                        srcSet={require("./homePics/cockatoos-10.webp")} 
                         media="(min-width: 0px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img"
+                        alt="featherd font reading 'Cockatoos'" className="home-font-img" 
                     />
                     <img 
                         src={require("./homePics/cockatoos-40.webp")} 
@@ -107,15 +96,9 @@ export const Home = () => {
                     />
                     <source 
                         srcSet={require("./homePics/dancing-20.webp")} 
-                        media="(min-width: 481px)"
+                        media="(min-width: 0px)"
                         className="home-img" 
                         alt="Breakdancing Cockatoo" 
-                    />
-                    <source 
-                        srcSet={require("./homePics/dancing-10.webp")} 
-                        media="(min-width: 0px)"
-                        className="home-img"
-                        alt="Breakdancing Cockatoo"  
                     />
                     <img 
                         src={require("./homePics/dancing-40.webp")} 
@@ -149,15 +132,9 @@ export const Home = () => {
                     />
                     <source 
                         srcSet={require("./homePics/singing-20.webp")} 
-                        media="(min-width: 481px)"
+                        media="(min-width: 0px)"
                         className="home-img"
                         alt="Singing Cockatoo" 
-                    />
-                    <source 
-                        srcSet={require("./homePics/singing-10.webp")} 
-                        media="(min-width: 0px)"
-                        className="home-img" 
-                        alt="Singing Cockatoo"
                     />
                     <img 
                         src={require("./homePics/singing-40.webp")} 
