@@ -46,6 +46,7 @@ export function Types() {
                             <figure className="type-img-container" key={types[type[0]].alt}>
                                 <img className="type-img" 
                                 src={require(`${types[type[0]].img}`)} alt={types[type[0]].alt}
+                                fetchpriority={type[0] === "Blue-eyed" ? "high" : "low"}
                             />
                             </figure>
                             <button className="learn-link-container">
