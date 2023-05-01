@@ -26,7 +26,7 @@ export function Results() {
                     />
                     <source 
                         srcSet={require("./resultsPics/cute40.webp")}
-                        media="(min-width: 747px)"
+                        media="(min-width: 481px)"
                     />
                     <source 
                         srcSet={require("./resultsPics/cute30.webp")}
@@ -59,7 +59,7 @@ export function Results() {
                 />
                 <source 
                     srcSet={require(`${finalResult.img40}`)}
-                    media="(min-width: 747px)"
+                    media="(min-width: 481px)"
                 />
                 <source 
                     srcSet={require(`${finalResult.img30}`)}
