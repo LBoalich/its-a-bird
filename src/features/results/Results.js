@@ -59,10 +59,6 @@ export function Results() {
                 />
                 <source 
                     srcSet={require(`${finalResult.img40}`)}
-                    media="(min-width: 481px)"
-                />
-                <source 
-                    srcSet={require(`${finalResult.img30}`)}
                     media="(min-width: 0px)"
                 />
                 <img 
