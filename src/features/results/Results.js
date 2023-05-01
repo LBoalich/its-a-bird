@@ -32,7 +32,8 @@ export function Results() {
                         srcSet={require("./resultsPics/cute30.webp")}
                         media="(min-width: 0px)"
                     />
-                    <img src={require("./resultsPics/cute30.webp")} alt="Two cute multi-colored cartoon cockatoos" className="no-result-img" />
+                    <img src={require("./resultsPics/cute30.webp")} alt="Two cute multi-colored cartoon cockatoos" className="no-result-img" 
+                    fetchpriority="high"/>
                 </picture>
                 <h2>Take the <Link to="/quiz" className="no-result-link">QUIZ</Link> now to see your result!</h2>
             </section>
@@ -64,7 +65,12 @@ export function Results() {
                     srcSet={require(`${finalResult.img30}`)}
                     media="(min-width: 0px)"
                 />
-                <img className="result-img" src={require(`${finalResult.img40}`)} alt={finalResult.alt}/>
+                <img 
+                    className="result-img" 
+                    src={require(`${finalResult.img40}`)} 
+                    alt={finalResult.alt}
+                    fetchpriority="high"
+                />
             </picture>
             <div className="button-div">
                 <button className="type-button" onClick={handleClick}>Learn More</button>
