@@ -8,7 +8,7 @@ export const Home = () => {
             <div className="quiz-banner">
                 <p>Which cockatoo are you?  Take the <span><Link to="/quiz" className="quiz-link">QUIZ</Link></span> to find out!</p>
             </div>
-            <article className="home-container">
+            <main className="home-container">
                 <picture
                    id="left-top"
                 >
@@ -143,7 +143,7 @@ export const Home = () => {
                 </picture>
                 <p> Cockatoos are truly the life of the party, and they'll leave you in awe with their comedic talents and contagious energy. Rock on, feathered friends!
                 </p>
-            </article>
+            </main>
         </div>
     );
 };
