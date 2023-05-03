@@ -13,7 +13,7 @@
     animation: 2s ease-in-out 1s 1 reverse both running slidein;
     font-family: 'Source Sans 3', sans-serif;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @keyframes slidein {
@@ -27,7 +27,7 @@
 
 .quiz-link {
     color: black;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .quiz-link:hover {

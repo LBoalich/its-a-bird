@@ -13,28 +13,24 @@ export const Home = () => {
                    id="left-top"
                 >
                     <source 
-                        srcSet={require("./homePics/punk-rock-80.webp")} 
-                        media="(min-width: 1601px)"
-                        className="home-img" 
-                        alt="Punk Rock Cockatoo"
+                        srcSet={`${require("./homePics/punk-rock-80.webp")}, ${require("./homePics/punk-rock.webp")} 1.5x 2x`}
+                        media="(min-width: 1601px)" 
                     />
                     <source 
-                        srcSet={require("./homePics/punk-rock-60.webp")} 
+                        srcSet={`${require("./homePics/punk-rock-60.webp")}, ${require("./homePics/punk-rock-90.webp")} 1.5x, ${require("./homePics/punk-rock.webp")} 2x`}
                         media="(min-width: 1025px)"
-                        className="home-img"
-                        alt="Punk Rock Cockatoo" 
                     />
                     <source 
-                        srcSet={require("./homePics/punk-rock-40.webp")} 
+                        srcSet={`${require("./homePics/punk-rock-40.webp")}, ${require("./homePics/punk-rock-60.webp")} 1.5x, ${require("./homePics/punk-rock-80.webp")} 2x`}
                         media="(min-width: 747px)"
-                        className="home-img" 
-                        alt="Punk Rock Cockatoo"
                     />
                     <source 
-                        srcSet={require("./homePics/punk-rock-30.webp")} 
+                        srcSet={`${require("./homePics/punk-rock-30.webp")}, ${require("./homePics/punk-rock-45.webp")} 1.5x, ${require("./homePics/punk-rock-60.webp")} 2x`}
+                        media="(min-width: 481px)"
+                    />
+                    <source 
+                        srcSet={`${require("./homePics/punk-rock-20.webp")}, ${require("./homePics/punk-rock-30.webp")} 1.5x, ${require("./homePics/punk-rock-40.webp")} 2x`}
                         media="(min-width: 0px)"
-                        className="home-img"
-                        alt="Punk Rock Cockatoo" 
                     />
                     <img 
                         src={require("./homePics/punk-rock-40.webp")} 
@@ -48,27 +44,22 @@ export const Home = () => {
                     <source 
                         srcSet={require("./homePics/cockatoos-80.webp")} 
                         media="(min-width: 1601px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img"
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-60.webp")} 
                         media="(min-width: 1025px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img"
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-40.webp")} 
                         media="(min-width: 747px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img"
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-20.webp")} 
                         media="(min-width: 481px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img" 
                     />
                     <source 
                         srcSet={require("./homePics/cockatoos-10.webp")} 
                         media="(min-width: 0px)"
-                        alt="featherd font reading 'Cockatoos'" className="home-font-img" 
                     />
                     <img 
                         src={require("./homePics/cockatoos-40.webp")} 
@@ -82,31 +73,28 @@ export const Home = () => {
                    id="right"
                 >
                     <source 
-                        srcSet={require("./homePics/dancing-80.webp")} 
+                        srcSet={`${require("./homePics/dancing-80.webp")}, ${require("./homePics/dancing.webp")} 1.5x 2x`}
                         media="(min-width: 1601px)"
-                        className="home-img"
-                        alt="Breakdancing Cockatoo"  
                         fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/dancing-60.webp")} 
+                        srcSet={`${require("./homePics/dancing-60.webp")}, ${require("./homePics/dancing-90.webp")} 1.5x, ${require("./homePics/dancing.webp")} 2x`}
                         media="(min-width: 1025px)"
-                        className="home-img" 
-                        alt="Breakdancing Cockatoo" 
                         fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/dancing-40.webp")} 
+                        srcSet={`${require("./homePics/dancing-40.webp")}, ${require("./homePics/dancing-60.webp")} 1.5x, ${require("./homePics/dancing-80.webp")} 2x`}
                         media="(min-width: 747px)"
-                        className="home-img" 
-                        alt="Breakdancing Cockatoo" 
                         fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/dancing-30.webp")} 
+                        srcSet={`${require("./homePics/dancing-30.webp")}, ${require("./homePics/dancing-45.webp")} 1.5x, ${require("./homePics/dancing-60.webp")} 2x`}
+                        media="(min-width: 481px)"
+                        fetchpriority="high"
+                    />
+                    <source 
+                        srcSet={`${require("./homePics/dancing-20.webp")}, ${require("./homePics/dancing-30.webp")} 1.5x, ${require("./homePics/dancing-40.webp")} 2x`}
                         media="(min-width: 0px)"
-                        className="home-img" 
-                        alt="Breakdancing Cockatoo" 
                         fetchpriority="high"
                     />
                     <img 
@@ -123,28 +111,29 @@ export const Home = () => {
                     id="left-bottom"
                 >
                     <source 
-                        srcSet={require("./homePics/singing-80.webp")} 
+                        srcSet={`${require("./homePics/singing-80.webp")}, ${require("./homePics/singing.webp")} 1.5x 2x`}
                         media="(min-width: 1601px)"
-                        className="home-img"
-                        alt="Singing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/singing-60.webp")} 
+                        srcSet={`${require("./homePics/singing-60.webp")}, ${require("./homePics/singing-90.webp")} 1.5x, ${require("./homePics/singing.webp")} 2x`}
                         media="(min-width: 1025px)"
-                        className="home-img"
-                        alt="Singing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/singing-40.webp")}  
+                        srcSet={`${require("./homePics/singing-40.webp")}, ${require("./homePics/singing-60.webp")} 1.5x, ${require("./homePics/singing-80.webp")} 2x`}
                         media="(min-width: 747px)"
-                        className="home-img" 
-                        alt="Singing Cockatoo"
+                        fetchpriority="high"
                     />
                     <source 
-                        srcSet={require("./homePics/singing-30.webp")} 
+                        srcSet={`${require("./homePics/singing-30.webp")}, ${require("./homePics/singing-45.webp")} 1.5x, ${require("./homePics/singing-60.webp")} 2x`}
+                        media="(min-width: 481px)"
+                        fetchpriority="high"
+                    />
+                    <source 
+                        srcSet={`${require("./homePics/singing-20.webp")}, ${require("./homePics/singing-30.webp")} 1.5x, ${require("./homePics/singing-40.webp")} 2x`}
                         media="(min-width: 0px)"
-                        className="home-img"
-                        alt="Singing Cockatoo" 
+                        fetchpriority="high"
                     />
                     <img 
                         src={require("./homePics/singing-40.webp")} 
