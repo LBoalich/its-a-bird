@@ -26,13 +26,16 @@
     border-bottom-left-radius: 20% 50%;
 }
 
+.description-cockatoo-font-container {
+    max-width: 40%;
+    align-self: flex-end;
+}
+
 .description-cockatoo-font {
     height: 4vh;
-    max-width: 40%;
     padding: 0;
     border-bottom-left-radius: 20% 50%;
-    margin: 0 0 1vh 1vw;
-    align-self: flex-end;
+    margin: 0 0 1vh 1vw; 
 }
 
 .description-img-container {

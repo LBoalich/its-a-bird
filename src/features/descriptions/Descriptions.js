@@ -26,25 +26,87 @@ export function Descriptions() {
   const resultSelection = results[currentSelection];
 
   return (
-    <article className="description-container">
+    <main className="description-container">
         <div className="description-font-container">
-          <img src={require(`${currentSelectionObj.font}`)} alt={currentSelectionObj.fontAlt} className="description-font-img"/>
-          <img src={require("./descriptionsPics/cockatoo.webp")} className="description-cockatoo-font" alt="feathered font reading 'Cockatoo'"/>
-        </div>
-        <figure className="description-img-container">
-          <img src={require(`${currentSelectionObj.img}`)} alt={currentSelectionObj.alt} className="description-img" id="description-left"/>
-        </figure>
-        <p>
-          {currentSelectionObj.description}   
-          <span className="description-img-container" id="description-right">
+          <picture>
+            <source
+              media="(min-width: 1600px)" 
+              srcSet={`${require(`${currentSelectionObj.font30}`)}, ${require(`${currentSelectionObj.font60}`)} 2x`}
+            />
+            <source
+              media="(min-width: 0px)" 
+              srcSet={`${require(`${currentSelectionObj.font20}`)}, ${require(`${currentSelectionObj.font40}`)} 2x`}
+            />
             <img 
-              src={require(`../results${resultSelection.img.replace(".", "")}`)} 
+              src={require(`${currentSelectionObj.font30}`)} 
+              alt={currentSelectionObj.fontAlt} className="description-font-img"/>
+          </picture>
+          <picture 
+            className='description-cockatoo-font-container'
+          >
+            <source
+              media="(min-width: 1600px)"
+              srcSet={`${require("./descriptionsFonts30/cockatoo.webp")}, ${require("./descriptionsFonts60/cockatoo.webp")} 2x`}
+            />
+            <source
+              media="(min-width: 0px)"
+              srcSet={`${require("./descriptionsFonts20/cockatoo.webp")}, ${require("./descriptionsFonts40/cockatoo.webp")} 2x`}
+            />
+            <img 
+              src={require("./descriptionsFonts30/cockatoo.webp")} className="description-cockatoo-font" 
+              alt="feathered font reading 'Cockatoo'"
+            />
+          </picture>
+        </div>
+        <picture 
+          className="description-img-container">
+          <source 
+            media="(min-width: 1600px)"
+            srcSet={`${require(`${currentSelectionObj.img50}`)}, ${require(`${currentSelectionObj.img}`)} 2x`}
+            fetchpriority="high"
+          />
+          <source 
+            media="(min-width: 768px)"
+            srcSet={`${require(`${currentSelectionObj.img40}`)}, ${require(`${currentSelectionObj.img80}`)} 2x`}
+            fetchpriority="high"
+          />
+          <source 
+            media="(min-width: 0px)"
+            srcSet={`${require(`${currentSelectionObj.img30}`)}, ${require(`${currentSelectionObj.img60}`)} 2x`}
+            fetchpriority="high"
+          />
+          <img 
+            src={require(`${currentSelectionObj.img50}`)} 
+            alt={currentSelectionObj.alt} className="description-img" id="description-left"
+            fetchpriority="high"
+          />
+        </picture>
+        <p>
+          {currentSelectionObj.description} 
+        </p>  
+          <picture
+            className="description-img-container" id="description-right">
+            <source 
+            media="(min-width: 1600px)"
+            srcSet={`${require(`../results${resultSelection.img40.replace(".", "")}`)}, ${require(`../results${resultSelection.img80.replace(".", "")}`)} 2x`}
+            />
+            <source 
+              media="(min-width: 768px)"
+              srcSet={`${require(`../results${resultSelection.img30.replace(".", "")}`)}, ${require(`../results${resultSelection.img60.replace(".", "")}`)} 2x`}
+            />
+            <source 
+              media="(min-width: 0px)"
+              srcSet={`${require(`../results${resultSelection.img20.replace(".", "")}`)}, ${require(`../results${resultSelection.img40.replace(".", "")}`)} 2x`}
+            />
+            <img 
+              src={require(`../results${resultSelection.img40.replace(".", "")}`)} 
               alt={resultSelection.alt} className="description-img"
               fetchpriority="high"
             />
-          </span>
+          </picture>
+        <p>
           {currentSelectionObj.description2}
         </p>  
-    </article>
+    </main>
   );
 };
