@@ -62,21 +62,21 @@ export function Descriptions() {
           className="description-img-container">
           <source 
             media="(min-width: 1600px)"
-            srcSet={`${require(`${currentSelectionObj.img50}`)}, ${require(`${currentSelectionObj.img}`)} 2x`}
+            srcSet={`${require(`${currentSelectionObj.imgM}`)}, ${require(`${currentSelectionObj.imgL}`)} 2x`}
             fetchpriority="high"
           />
           <source 
             media="(min-width: 768px)"
-            srcSet={`${require(`${currentSelectionObj.img40}`)}, ${require(`${currentSelectionObj.img80}`)} 2x`}
+            srcSet={`${require(`${currentSelectionObj.imgS}`)}, ${require(`${currentSelectionObj.imgM}`)} 2x`}
             fetchpriority="high"
           />
           <source 
             media="(min-width: 0px)"
-            srcSet={`${require(`${currentSelectionObj.img30}`)}, ${require(`${currentSelectionObj.img60}`)} 2x`}
+            srcSet={`${require(`${currentSelectionObj.imgXS}`)}, ${require(`${currentSelectionObj.imgS}`)} 2x`}
             fetchpriority="high"
           />
           <img 
-            src={require(`${currentSelectionObj.img50}`)} 
+            src={require(`${currentSelectionObj.imgM}`)} 
             alt={currentSelectionObj.alt} className="description-img" id="description-left"
             fetchpriority="high"
           />
