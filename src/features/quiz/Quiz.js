@@ -74,8 +74,26 @@ export function Quiz() {
       <h1>{quizQuestions[currentQuestionNum].question}</h1>
       <div className="answerContainer">
         {currentChoices.map(choice => {
-          return <figure className="answerChoice" key={choice.alt}>
-                  <img src={require(`${choice.img}`)} alt={choice.alt} onClick={() => handleClick(choice.answer)}/>
+          return <figure
+                  className="answerChoice" key={choice.alt}>
+                  <picture>
+                    <source 
+                      media="(min-width: 1600px)"
+                      srcSet={`${require(`${choice.imgM}`)}, ${require(`${choice.imgL}`)} 2x`}
+                    />
+                    <source 
+                      media="(min-width: 768px)"
+                      srcSet={`${require(`${choice.imgS}`)}, ${require(`${choice.imgM}`)} 2x`}
+                    />
+                    <source
+                      media="(min-width: 0px)"
+                      srcSet={`${require(`${choice.imgXS}`)}, ${require(`${choice.imgS}`)} 2x`}
+                    />
+                    <img 
+                      src={require(`${choice.imgM}`)} 
+                      alt={choice.alt} onClick={() => handleClick(choice.answer)}
+                    />
+                  </picture>
                 </figure>
         })}
       </div>
