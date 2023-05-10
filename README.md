@@ -1,3 +1,65 @@
+# It'a A Bird
+
+---
+
+## Description
+This project was created to complete a Codecademy portfolio project for the Front-End Engineer career path.  It uses react and redux to make a fun website about cockatoos.  Users can read about different types of cockatoos and take a quiz to see which cockatoo they are most like. 
+
+---
+
+## Features
+*  __Responsive__:  Flexbox design and responsive images allow the website to look great on any device. 
+
+Mobile Layout
+
+<img src="readmePics/mobile-quiz.png" alt="Mobile Quiz">
+
+<img src="readmePics/mobile-types.png" alt="Mobile Quiz">
+
+Desktop Layout
+
+<img src="readmePics/desktop-quiz.png" alt="Desktop Quiz">
+
+<img src="readmePics/desktop-types.png" alt="Desktop Types">
+
+*  __Easy to use__: Navigation bar has a hamburger style menu to navigate the site.  If a user navigates to the quiz result page before taking the quiz, they are directed to take the quiz first to see their result.  Redux Persist ensures quiz answers and result are saved even when the site is refreshed.  Simply clicking the images in the quiz saves the answer and moves to the next question.  
+
+<img src="readmePics/navBar.png" alt="Navigation Bar">
+
+
+<img src="readmePics/results.png" alt="Results Page">
+
+*  __Cohesive Design__: The site is made cohesive by using the same background image on each page.  Also, colors from the background are used throughout the site as well as similar layout designs for the pages.
+
+## How to Use
+Simply open [It's A Bird](https://its-a-bird.netlify.app/) in any browser to use the website.
+
+---
+
+## Technologies
+* node.js: 19.8.1
+* react: 18.2.0
+* react-dom: 18.2.0
+* react-scripts: 5.0.1
+* react-router-dom: 6.10.0
+* react-redux: 8.0.5
+* reduxjs/toolkit: 1.9.3
+* redux-persist: 6.0.0
+* web-vitals: 2.1.4
+* testing-library/jest-dom: 5.16.5
+* testing-library/react: 13.4.0
+* testing-library/user-event: 14.4.3
+* normalize.css: 8.0.1
+* slugify: 1.6.6
+* unslugify: 1.0.3
+* javascript
+* html
+* css
+* markdown
+
+---
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
