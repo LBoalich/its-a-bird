@@ -1,4 +1,4 @@
-# It'a A Bird
+# It's A Bird
 
 ---
 
@@ -10,24 +10,35 @@ This project was created to complete a Codecademy portfolio project for the Fron
 ## Features
 *  __Responsive__:  Flexbox design and responsive images allow the website to look great on any device. 
 
-Mobile Layout
+*Mobile Layout*
 
 <img src="readmePics/mobile-quiz.png" alt="Mobile Quiz">
 
+
+
 <img src="readmePics/mobile-types.png" alt="Mobile Quiz">
 
-Desktop Layout
+
+
+*Desktop Layout*
 
 <img src="readmePics/desktop-quiz.png" alt="Desktop Quiz">
 
+
+
 <img src="readmePics/desktop-types.png" alt="Desktop Types">
+
+
 
 *  __Easy to use__: Navigation bar has a hamburger style menu to navigate the site.  If a user navigates to the quiz result page before taking the quiz, they are directed to take the quiz first to see their result.  Redux Persist ensures quiz answers and result are saved even when the site is refreshed.  Simply clicking the images in the quiz saves the answer and moves to the next question.  
 
 <img src="readmePics/navBar.png" alt="Navigation Bar">
 
 
+
 <img src="readmePics/results.png" alt="Results Page">
+
+
 
 *  __Cohesive Design__: The site is made cohesive by using the same background image on each page.  Also, colors from the background are used throughout the site as well as similar layout designs for the pages.
 
